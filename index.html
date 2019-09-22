@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!-- When the page first loads, it will render a bootstrap animated download spinning icon -->
+    <!--------- When the page first loads, it will render a bootstrap animated download spinning icon ---->
     <div id="renderBrowser">
         <div id="spinner"></div>
     </div>
@@ -21,28 +21,28 @@
         <h onclick="renderZoomImg()"><i class="fa fa-times-circle-o"></i></h>
         <div id="imgPlaced"></div>
     </div>
-    <!-- Bootstrap Header section of the page -->
+    <!--------------- Bootstrap Header section of the page ------------------------------------------------------------------------------------------------------------------------------------------->
     <header id="animateHead" class="animated slideInDown" style="animation-delay: 2.3s;">
         <!-- My navBar section is within the header -->
     <table>
         <tr>
             <td id="myName">Andrew Duong</td>
             <td id="navBar">
-                <a href="#projects">Projects</a>
                 <a href="#aboutMe">About Me</a>
+                <a href="#projects">Projects</a>
                 <a href="#blog">Blog</a>
                 <a href="#contact">Contact</a>
             </td>
         </tr>
     </table>
 </header>
-<!--  my about me and social media links/logos of the page -->
-    <table id="aboutMe">
+
+<!-------------------- my intro page welcoming vistors and where my social media links/logos are located on the page -------------------------------------------------------------------------------------------------------------------------->
+    <table id="pageIntro">
         <tr>
         <td class="animated slideInLeft" style="animation-delay: 2.1s;">
             <!-- My about my  -->
-        <h1>Greetings-welcome to my personal webpage first and foremost. I was born in San Jose, California and raised in Cupertino, California for majority of my life. I graduated at San Jose State 
-            University and majored in Management Information Systems and Computer Science. I have </h1>
+        <h1>Greetings-welcome to my personal webpage first and foremost. </h1>
             <table>
                 <tr>
                     <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias"><i class="fab fa-twitter"></i></a></td>
@@ -55,7 +55,8 @@
             <td id="myImg" class="animated zoomInUp" style="animation-delay: 2s;"></td>
             </tr>
     </table>
-    <!-- my projects section of the page -->
+
+    <!------------------------- my projects section within the webpage ----------------------------------------------------------------------------------------------->
     <div id="myPortfolio">
         <h1>Projects</h1>
         <!-- where the user is able to see and click through my projects -->
@@ -67,6 +68,14 @@
             <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
             <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
         </div>
+    </div>
+    <!------------------- my about me section within the webpage ------------------------------------------------------------------------------------------------------->
+    <div id="aboutMe">
+        <h1>About Me</h1>
+        <p>
+                My name is Andrew Duong. I am a Vietnamese-American born in San Jose, California and raised in Cupertino, California for majority of my life. I graduated at San Jose State 
+                University and majored in Management Information Systems and Computer Science. I have
+        </p>
     </div>
     
 
