@@ -1,92 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Andrew Duong's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div class="mainContainer">
+    <div class="mainContainer">
 
-    <!--------- When the page first loads, it will render a bootstrap animated download spinning icon ---->
-    <div id="renderBrowser">
-        <div id="spinner"></div>
-    </div>
-    
-    <div id="zooming">
-        <h onclick="renderZoomImg()"><i class="fa fa-times-circle-o"></i></h>
-        <div id="imgPlaced"></div>
-    </div>
-    <!--------------- Bootstrap Header section of the page ------------------------------------------------------------------------------------------------------------------------------------------->
-    <header id="animateHead" class="animated slideInDown" style="animation-delay: 2.3s;">
-        <!-- My navBar section is within the header -->
-    <table>
-        <tr>
-            <td id="myName">Andrew Duong</td>
-            <td id="navBar">
-                <a href="#projects">Projects</a>
-                <a href="#aboutMe">About Me</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact">Contact</a>
-            </td>
-        </tr>
-    </table>
-</header>
+        <!--------- When the page first loads, it will render a bootstrap animated download spinning icon ---->
+        <div id="renderBrowser">
+            <div id="spinner"></div>
+        </div>
 
-<!-------------------- my intro page welcoming vistors and where my social media links/logos are located on the page -------------------------------------------------------------------------------------------------------------------------->
-    <table id="pageIntro">
-        <tr>
-        <td class="animated slideInLeft" style="animation-delay: 2.1s;">
-            <!-- My about my  -->
-        <h1>Greetings-welcome to my personal webpage first and foremost. </h1>
+        <div id="zooming">
+            <h onclick="renderZoomImg()"><i class="fa fa-times-circle-o"></i></h>
+            <div id="imgPlaced"></div>
+        </div>
+        <!--------------- Bootstrap Header section of the page ------------------------------------------------------------------------------------------------------------------------------------------->
+        <header id="animateHead" class="animated slideInDown" style="animation-delay: 2.3s;">
+            <!-- My navBar section is within the header -->
             <table>
                 <tr>
-                    <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias"><i class="fab fa-twitter"></i></a></td>
-                    <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias"><i class="fab fa-instagram"></i></a></td>
-                    <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias"><i class="fab fa-facebook"></i></a></td>
+                    <td id="myName">Andrew Duong</td>
+                    <td id="navBar">
+                        <a href="#projects">Projects</a>
+                        <a href="#aboutMe">About Me</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#contact">Contact</a>
+                    </td>
                 </tr>
             </table>
-            </td>
-            <!-- Where my own person picture is placed...with Bootstrap, i will make the logo animate as the administrator scrolls down the page -->
-            <td id="myImg" class="animated zoomInUp" style="animation-delay: 2s;"></td>
+        </header>
+
+        <!-------------------- my intro page welcoming vistors and where my social media links/logos are located on the page -------------------------------------------------------------------------------------------------------------------------->
+        <table id="pageIntro">
+            <tr>
+                <td class="animated slideInLeft" style="animation-delay: 2.1s;">
+                    <!-- My about my  -->
+                    <h1>Greetings-welcome to my personal webpage first and foremost. </h1>
+                    <table>
+                        <tr>
+                            <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias"><i
+                                        class="fab fa-twitter"></i></a></td>
+                            <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias"><i
+                                        class="fab fa-instagram"></i></a></td>
+                            <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias"><i
+                                        class="fab fa-facebook"></i></a></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- Where my own person picture is placed...with Bootstrap, i will make the logo animate as the administrator scrolls down the page -->
+                <td id="myImg" class="animated zoomInUp" style="animation-delay: 2s;"></td>
             </tr>
-    </table>
+        </table>
 
-    <!------------------------- my projects section within the webpage ----------------------------------------------------------------------------------------------->
-    <div id="myPortfolio">
-        <h1>Projects</h1>
-        <!-- where the user is able to see and click through my projects -->
-        <div id="projectImgs">
-            <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
-            <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
-            <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
-            <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
-            <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
-            <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
+        <!------------------------- my projects section within the webpage ----------------------------------------------------------------------------------------------->
+        <div id="myPortfolio">
+            <h1>Projects</h1>
+            <!-- where the user is able to see and click through my projects -->
+            <div id="projectImgs">
+                <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
+                <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
+                <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
+                <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
+                <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
+                <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
+            </div>
         </div>
-    </div>
-    <!------------------- my about me section within the webpage --------------------------------------------------------------------------------------------------------------------------->
-    <div id="aboutMe">
-        <h1>About</h1>
-        <p>
-                My name is Andrew Duong. I am a Vietnamese-American born in San Jose, California and raised in Cupertino, California for majority of my life. I graduated at San Jose State 
+        <!------------------- my about me section within the webpage --------------------------------------------------------------------------------------------------------------------------->
+        <div id="aboutMe">
+            <h1>About</h1>
+            <p>
+                My name is Andrew Duong. I am a Vietnamese-American born in San Jose, California and raised in
+                Cupertino, California for majority of my life. I graduated at San Jose State
                 University and majored in Management Information Systems and Computer Science. I have
-        </p>
-    </div>
-    <!--------------------my Medium blog posts are embded within the webpage --------------------------------------------------------------------------------------------------------------->
-    <div id="blogPosts">
-        <h1>Journal</h1>
-    </div>
+            </p>
+        </div>
+        <!--------------------my Medium blog posts are embded within the webpage --------------------------------------------------------------------------------------------------------------->
+        <div id="blogPosts">
+            <h1>Journal</h1>
+        </div>
 
-    <!-------------------- my contact page location within the webpage--------------------------------------------------------------------------------------------------------------------->
-    <div id="contactMe">
-        <h1>Contact</h1>
+        <!-------------------- my contact page location within the webpage--------------------------------------------------------------------------------------------------------------------->
+        <div id="contactMe">
+            <h1>Contact</h1>
             <table>
                 <tr>
                     <td>
@@ -97,13 +104,13 @@
                                 <tr>
                                     <td><i class="fas fa-mobile-alt"></i> &nbsp; +1(408)605-8973</td>
                                 </tr>
-                                 <!-- my email contact row-->
+                                <!-- my email contact row-->
                                 <tr>
                                     <td><i class="fas fa-envelope-open-text"></i> &nbsp; Andrewqduong@gmail.com</td>
                                 </tr>
                                 <!-- my address contact row -->
                                 <tr>
-                                    <td><i class="fas fa-map-pin"></i> 
+                                    <td><i class="fas fa-map-pin"></i>
                                         <div id="myAddress">
                                             10700 Castine Avenue,
                                             <br>
@@ -115,52 +122,55 @@
                                 </tr>
                                 <!-- my social medias row -->
                                 <tr>
-                                <td>
-                                    <a class="socialMedias"><i class="fab fa-twitter"></i></a>
-                                    <a class="socialMedias"><i class="fab fa-instagram"></i></a>
-                                    <a class="socialMedias"><i class="fab fa-facebook"></i></a>
-                                    <a class="socialMedias"><i class="fab fa-medium"></i></a>
-                                    <a class="socialMedias"><i class="fab fa-dribbble"></i></a>
-                                </td>
+                                    <td>
+                                        <a class="socialMedias"><i class="fab fa-twitter"></i></a>
+                                        <a class="socialMedias"><i class="fab fa-instagram"></i></a>
+                                        <a class="socialMedias"><i class="fab fa-facebook"></i></a>
+                                        <a class="socialMedias"><i class="fab fa-medium"></i></a>
+                                        <a class="socialMedias"><i class="fab fa-dribbble"></i></a>
+                                    </td>
                                 </tr>
 
                             </table>
                         </div>
                     </td>
                     <td>
-                    <!-- form page portion of the webpage for vistors who want to contact me ... located at the bottom of my contact page -->
-                                <form>
-                                    <!-- Vistor's name input box-->
-                                    <input type="text" placeholder="First and Last name" required>
-                                    <!-- Vistor's phone input box -->
-                                    <input type="text" placeholder="#-(###)-###-####" required>
-                                    <!-- Vistor's email input box -->
-                                    <input type="email" placeholder="email@email.com" required>
-                                    <br>
-                                    <!-- Vistor's custom message input box -->
-                                    <textarea placeholder="Your custom message for me" required rows="6">
+                        <!-- form page portion of the webpage for vistors who want to contact me ... located at the bottom of my contact page -->
+                        <form>
+                            <!-- Vistor's name input box-->
+                            <input type="text" placeholder="First and Last name" required>
+                            <!-- Vistor's phone input box -->
+                            <input type="text" placeholder="#-(###)-###-####" required>
+                            <!-- Vistor's email input box -->
+                            <input type="email" placeholder="email@email.com" required>
+                            <br>
+                            <!-- Vistor's custom message input box -->
+                            <textarea placeholder="Your custom message for me" required rows="6">
                                     </textarea>
-                                    <br>
-                                    <!-- Submit button for the vistor's contact form -->
-                                    <button class="btnContact">Send</button>
-                                </form>
+                            <br>
+                            <!-- Submit button for the vistor's contact form -->
+                            <button class="btnContact">Send</button>
+                        </form>
                     </td>
                 </tr>
             </table>
-    </div>
+        </div>
 
-    <!-- my footer is placed here below my contact portion and at the very end of the webpage -->
-    <div id="footer">
-       Andrew Duong &#169 2019.
-       <!-- my privacy policy -->
-       <a href="https://www.termsfeed.com/privacy-policy/dea6d12a2dd09ca19faebf9b85139e89/" style="float: right;">Privacy Policy</a>
-       <!-- my user terms and conditions -->
-       <a href="https://www.termsfeed.com/terms-conditions/41b0874cb2d4faccf4bec37c306183d5/" style="float: right;">Terms and Conditions</a>
-    </div>
+        <!-- my footer is placed here below my contact portion and at the very end of the webpage -->
+        <div id="footer">
+            Andrew Duong &#169 2019.
+            <!-- my privacy policy -->
+            <a href="https://www.termsfeed.com/privacy-policy/dea6d12a2dd09ca19faebf9b85139e89/"
+                style="float: right;">Privacy Policy</a>
+            <!-- my user terms and conditions -->
+            <a href="https://www.termsfeed.com/terms-conditions/41b0874cb2d4faccf4bec37c306183d5/"
+                style="float: right;">Terms and Conditions</a>
+        </div>
 
-<!-- end of 'mainContainer' class div -->
-</div>
-<!-- link ref to app.js file -->
-<script src="app.js" type="text/javascript"></script>
+        <!-- end of 'mainContainer' class div -->
+    </div>
+    <!-- link ref to app.js file -->
+    <script src="app.js" type="text/javascript"></script>
 </body>
+
 </html>
