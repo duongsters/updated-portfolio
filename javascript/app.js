@@ -1,0 +1,1 @@
+var perimeter = $(window).width()

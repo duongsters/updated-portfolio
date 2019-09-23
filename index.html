@@ -7,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Andrew Duong's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- link ref to jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- link ref to FontAwesome CND -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- link ref to style.css -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,7 +29,7 @@
             <h onclick="renderZoomImg()"><i class="fa fa-times-circle-o"></i></h>
             <div id="imgPlaced"></div>
         </div>
-        <!--------------- Bootstrap Header section of the page ------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------- Bootstrap Header section of the page ------------------------------------------------------------------------------------------------------------------------------------------->
         <header id="animateHead" class="animated slideInDown" style="animation-delay: 2.3s;">
             <!-- My navBar section is within the header -->
             <table>
@@ -42,12 +45,15 @@
             </table>
         </header>
 
-        <!-------------------- my intro page welcoming vistors and where my social media links/logos are located on the page -------------------------------------------------------------------------------------------------------------------------->
+<!-------------------- my intro page welcoming vistors and where my social media links/logos are located on the page -------------------------------------------------------------------------------------------------------------------------->
         <table id="pageIntro">
             <tr>
                 <td class="animated slideInLeft" style="animation-delay: 2.1s;">
-                    <!-- My about my  -->
-                    <h1>Greetings-welcome to my personal webpage first and foremost. </h1>
+                    <!-- my -->
+                    <h1>Greetings and welcome to my personal webpage first and foremost. Enjoy navigating though the page. If you have any questions/concerns, don't hesistate in contacting me and I will get back to you shortly!
+                        Interested with my work?  
+
+                    </h1>
                     <table>
                         <tr>
                             <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias"><i
@@ -64,7 +70,7 @@
             </tr>
         </table>
 
-        <!------------------------- my projects section within the webpage ----------------------------------------------------------------------------------------------->
+<!------------------------- my projects section within the webpage -------------------------------------------------------------------------------------------------------------------------------------->
         <div id="myPortfolio">
             <h1>Projects</h1>
             <!-- where the user is able to see and click through my projects -->
@@ -77,7 +83,7 @@
                 <img onclick="zoomImg($(this).attr('src'))" src="./images/....">
             </div>
         </div>
-        <!------------------- my about me section within the webpage --------------------------------------------------------------------------------------------------------------------------->
+<!------------------- my about me section within the webpage ----------------------------------------------------------------------------------------------------------------------------------------------->
         <div id="aboutMe">
             <h1>About</h1>
             <p>
@@ -86,12 +92,12 @@
                 University and majored in Management Information Systems and Computer Science. I have
             </p>
         </div>
-        <!--------------------my Medium blog posts are embded within the webpage --------------------------------------------------------------------------------------------------------------->
+<!--------------------my Medium blog posts are embded within the webpage ------------------------------------------------------------------------------------------------------------------------------->
         <div id="blogPosts">
             <h1>Journal</h1>
         </div>
 
-        <!-------------------- my contact page location within the webpage--------------------------------------------------------------------------------------------------------------------->
+<!-------------------- my contact location within the webpage ----------------------------------------------------------------------------------------------------------------------------------------->
         <div id="contactMe">
             <h1>Contact</h1>
             <table>
@@ -156,7 +162,7 @@
             </table>
         </div>
 
-        <!-- my footer is placed here below my contact portion and at the very end of the webpage -->
+<!----------------------- my footer section at the end of the webpage -------------------------------------------------------------------------------------------------->
         <div id="footer">
             Andrew Duong &#169 2019.
             <!-- my privacy policy -->
@@ -170,7 +176,7 @@
         <!-- end of 'mainContainer' class div -->
     </div>
     <!-- link ref to app.js file -->
-    <script src="app.js" type="text/javascript"></script>
+    <script src="./javascript/app.js" type="text/javascript"></script>
 </body>
 
 </html>
