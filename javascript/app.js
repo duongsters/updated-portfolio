@@ -18,7 +18,7 @@ window.onscroll = function() {
             //source: https://web-design-weekly.com/2014/11/18/viewport-units-vw-vh-vmin-vmax/
             $("#animateHeader").css("padding", "3vh 3vw");
             //change the css stylings of the navbar, along with the 'a' tags within
-            $("#navBar a").hover(function(){
+            $("#navBar a").hover(function() {
                 //when this function runs, it will change the border-bottom property of the navBar to blue
                 $(this).css("border-bottom", "2px solid rgb(89, 45, 255)");
                 //then the 2nd function is ran and changes the blue navbar to transprent colored with a dissapearing effect as user scrolls further down webpage
@@ -35,9 +35,9 @@ window.onscroll = function() {
                     $(this).css("border-bottom", "2px solid transparent");
                 });
             }   
-        }
 }
 }
+
 
 //function that will animate zooming in the profile picture of mine as the user scrolls down the webpage
         function ZoomImg(imgUrl) {
