@@ -57,10 +57,16 @@ window.onscroll = function() {
                 $("#imgPlaced").css("background", `url('') center center`);
             }, 800);
         }
-        
+        //
         setTimeout(function(){
-
-        });
+            $("#renderBrowser").addclass("animated zoomOut");
+            setTimeout(function(){
+                $("#renderBrowser").removeClass("animated zoomOut");
+                $("#renderBrowser").css("display", "none");
+        //the 2nd function on line 63 will run and will remove the animations once it hits 800px
+            }, 800);
+        //the first function on line 61 will be executed once it hits the 1650px barrier as they scroll down
+        }, 1645);
 
 
     
