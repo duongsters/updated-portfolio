@@ -1,10 +1,10 @@
 // event handler captures the window width of browser as you use the scrollbar to go up/down page
-var scrolling = $(window).width()
+var scrolling = $(window).width();
 //as you use the scrollbar element to scroll through the webpage, the .onscroll event handle will then then run this function below that will run this..
 //source: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop
 window.onscroll = function() {
     // if, else loop where it will check the element's width is greater than 1000px, it will then go and and see...
-    if ((width>=1000)){
+    if ((width>=1000)) {
         //if the body OR the element's content is vertically scroll is greather than 80px, then...
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
             //change the css stylings of the header 'animateHeader' make the background transparent as you scroll 
@@ -24,7 +24,8 @@ window.onscroll = function() {
                 //then the 2nd function is ran and changes the blue navbar to transprent colored with a dissapearing effect as user scrolls further down webpage
             }, function() {
                 $(this).css("border-bottom", "2px solid transparent")
-            }
+            });
+        }
             else {
                 $("#animateHeader").css("background", "transparent");
                 $("#animateHeader").css("color", "#fff");
@@ -34,7 +35,10 @@ window.onscroll = function() {
                     $(this).css("border-bottom", "2px solid transparent");
                 });
             }   
-            }
+        }
+}
+}
+
 //function that will animate zooming in the profile picture of mine as the user scrolls down the webpage
         function ZoomImg(imgUrl) {
         $("#imgPlaced").css("background", `url('${imgUrl}') center center`);
@@ -52,7 +56,9 @@ window.onscroll = function() {
                 $("#imgPlaced").css("background", `url('') center center`);
             }, 800);
         }
-        setTimeout(function)
+        setTimeout(function(){
+
+        })
             });
         }
 
