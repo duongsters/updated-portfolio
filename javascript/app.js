@@ -47,6 +47,7 @@ window.onscroll = function() {
         setTimeout(function(){
             $("#zoomImg").removeClass("animated zoomIn");
         }, 800);
+    }
 
         function renderZoomImg(){
             $("#zoomImg").addclass("animated zoomOut");
@@ -56,13 +57,17 @@ window.onscroll = function() {
                 $("#imgPlaced").css("background", `url('') center center`);
             }, 800);
         }
+        
         setTimeout(function(){
 
-        })
-            });
-        }
+        });
 
-        }
-    }
 
-}
+    
+
+        });
+        
+
+        
+    
+
