@@ -17,9 +17,14 @@ window.onscroll = function() {
             //change the padding property of 'animateHeader' to 
             //source: https://web-design-weekly.com/2014/11/18/viewport-units-vw-vh-vmin-vmax/
             $("#animateHeader").css("padding", "5vh 5vw");
-            //change the navbar, along with the a tags within, css styling by running this local function within the current if loop
-            $("#navBar a").hover(function({
-
+            //change the css stylings of the navbar, along with the 'a' tags within
+            $("#navBar a").hover(function(){
+                //when this function runs, it will change the border-bottom property of the navBar to blue
+                $(this).css("border-bottom", "2px solid rgb(89, 45, 255)");
+                //then the 2nd function is ran and changes the blue navbar to transprent
+            }, function (){
+                $(this).css("border-bottom", "2px solid transparent")
+            }
             });
 
         }
