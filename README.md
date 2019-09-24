@@ -14,7 +14,7 @@
 - GitHub: Used to create the repository for the html and css in which that can be pushed to GitHub domain
 
 ## Summary:
-    In my updated portfolio, I was able to manage in using Bootstrap, Media Queries, and jquery to create my portfolio webpage. Using the .onscroll DOM event handle was a huge proponent in getting my portfolio page to me all within one webpage instead of creating separate pages for my about me, projects, blog/journal and contact pages. 
+    In my updated portfolio, I was able to manage in using Bootstrap, Media Queries, and jquery to create my portfolio webpage. Using the mainly the .on 'click' and .onscroll DOM event handle was a huge proponent in getting my portfolio page to me all within one webpage instead of creating separate pages for my about me, projects, blog/journal and contact pages. 
 
 ## Code Snippet:
 ```html
@@ -91,7 +91,7 @@
             <p>
                 My name is Andrew Duong. I am a Vietnamese-American born in San Jose, California and raised in
                 Cupertino, California for majority of my life. I graduated at San Jose State
-                University and majored in Management Information Systems and Computer Science. I have
+                University and majored in Management Information Systems and Computer Science. Being into the art of Taekwondo for over 8 years of my life, being active, outside of coding of course, is important to me. I enjoy fishing and teaching basketball whenever I can--oh yea, can't forget about squeezing in family time!
             </p>
         </div>
         <!--------------------my Medium blog posts are embded within the webpage ------------------------------------------------------------------------------------------------------------------------------->
