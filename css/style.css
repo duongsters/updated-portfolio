@@ -125,8 +125,17 @@ header table {
     height: 95vh;
     padding: 0px 8%;
 }
+
+#intro1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 84%;
+    height: 95vh;
+    padding: 0px 8%;
+}
 #intro h1 {
-    font-size: 35px;
+    font-size: 25px;
     word-wrap: break-word;
 }
 
@@ -139,6 +148,7 @@ header table {
     text-align: left;
     width: 20%;
 }
+
 
 .socialMedias {
     background: transparent;

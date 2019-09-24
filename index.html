@@ -19,17 +19,17 @@
 
 <body>
     <div class="mainContainer">
-
+<!-- decided to removed the page rendering animation image -->
         <!--------- When the page first loads, it will render a bootstrap animated download spinning icon ---->
-        <div id="renderBrowser">
+        <!-- <div id="renderBrowser">
             <div id="spinner"></div>
         </div>
 
         <div id="zoomImg">
             <h onclick="renderZoomImg()"><i class="fa fa-times-circle-o"></i></h>
             <div id="imgPlaced"></div>
-        </div>
-<!--------------- Bootstrap Header section of the page ------------------------------------------------------------------------------------------------------------------------------------------->
+        </div> -->
+        <!--------------- Bootstrap Header section of the page ------------------------------------------------------------------------------------------------------------------------------------------->
         <header id="animateHeader" class="animated slideInDown" style="animation-delay: 2.3s;">
             <!-- My navBar section is within the header -->
             <table>
@@ -45,23 +45,27 @@
             </table>
         </header>
 
-<!-------------------- my intro page welcoming vistors and where my social media links/logos are located on the page -------------------------------------------------------------------------------------------------------------------------->
+        <!-------------------- my intro page welcoming vistors and where my social media links/logos are located on the page -------------------------------------------------------------------------------------------------------------------------->
         <table id="pageIntro">
             <tr>
                 <td id="intro" class="animated slideInLeft" style="animation-delay: 2.1s;">
-                    <!-- my -->
-                    <h1>Greetings and welcome to my personal webpage first and foremost. Enjoy navigating though the page. If you have any questions/concerns, don't hesistate in contacting me and I will get back to you shortly!
-                        Interested with my work?  
-
+                    <!-- my intro page when vistors first step into the webpage-->
+                    <h1>Greetings and welcome to my personal webpage first and foremost. Enjoy navigating though the
+                        page. If you have any questions/concerns, don't hesistate in contacting me and I will get back
+                        to you shortly!
+                        Interested with my work?
                     </h1>
                     <table>
                         <tr>
-                            <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias" href="https://www.twitter.com/TheAndrewDuong"><i
-                                        class="fab fa-twitter"></i></a></td>
-                            <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias" href="https://www.instagram.com/theandrewduong"><i
-                                        class="fab fa-instagram"></i></a></td>
-                            <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias" href="https://www.facebook.com/andrew.duong1989"><i
-                                        class="fab fa-facebook"></i></a></td>
+                            <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias"
+                                    href="https://www.twitter.com/TheAndrewDuong"><i class="fab fa-twitter"></i></a>
+                            </td>
+                            <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias"
+                                    href="https://www.instagram.com/theandrewduong"><i class="fab fa-instagram"></i></a>
+                            </td>
+                            <td class="animated bounceIn" style="animation-delay: 2s;"><a class="socialMedias"
+                                    href="https://www.facebook.com/andrew.duong1989"><i class="fab fa-facebook"></i></a>
+                            </td>
                         </tr>
                     </table>
                 </td>
@@ -70,20 +74,26 @@
             </tr>
         </table>
 
-<!------------------------- my projects section within the webpage -------------------------------------------------------------------------------------------------------------------------------------->
+        <!------------------------- my projects section within the webpage -------------------------------------------------------------------------------------------------------------------------------------->
         <div id="myPortfolio">
             <h1>Projects</h1>
             <!-- where the user is able to see and click through my projects -->
             <div id="projectImgs">
-                <a href="https://duongsters.github.io/Psychic-Game/"><img onclick="zoomImg($(this).attr('src'))" src="./images/p1.png"></a>
-                <a href="https://duongsters.github.io/unit-4-game/"><img onclick="zoomImg($(this).attr('src'))" src="./images/p2.png"></a>
-                <a href="https://duongsters.github.io/project1-team1/"><img onclick="zoomImg($(this).attr('src'))" src="./images/p3.png"></a>
-                <a href="https://duongsters.github.io/firebased-train-scheduler/"></a><img onclick="zoomImg($(this).attr('src'))" src="./images/p4.png"></a>
-                <a href="https://duongsters.github.io/TriviaGame/"><img onclick="zoomImg($(this).attr('src'))" src="./images/p5.png"></a>
-                <a href="https://duongsters.github.io/GIFTastic/"><img onclick="zoomImg($(this).attr('src'))" src="./images/p6.png"></a>
+                <a href="https://duongsters.github.io/Psychic-Game/"><img onclick="zoomImg($(this).attr('src'))"
+                        src="./images/p1.png"></a>
+                <a href="https://duongsters.github.io/unit-4-game/"><img onclick="zoomImg($(this).attr('src'))"
+                        src="./images/p2.png"></a>
+                <a href="https://duongsters.github.io/project1-team1/"><img onclick="zoomImg($(this).attr('src'))"
+                        src="./images/p3.png"></a>
+                <a href="https://duongsters.github.io/firebased-train-scheduler/"></a><img
+                    onclick="zoomImg($(this).attr('src'))" src="./images/p4.png"></a>
+                <a href="https://duongsters.github.io/TriviaGame/"><img onclick="zoomImg($(this).attr('src'))"
+                        src="./images/p5.png"></a>
+                <a href="https://duongsters.github.io/GIFTastic/"><img onclick="zoomImg($(this).attr('src'))"
+                        src="./images/p6.png"></a>
             </div>
         </div>
-<!------------------- my about me section within the webpage ----------------------------------------------------------------------------------------------------------------------------------------------->
+        <!------------------- my about me section within the webpage ----------------------------------------------------------------------------------------------------------------------------------------------->
         <div id="aboutMe">
             <h1>About</h1>
             <p>
@@ -92,20 +102,15 @@
                 University and majored in Management Information Systems and Computer Science. I have
             </p>
         </div>
-<!--------------------my Medium blog posts are embded within the webpage ------------------------------------------------------------------------------------------------------------------------------->
+        <!--------------------my Medium blog posts are embded within the webpage ------------------------------------------------------------------------------------------------------------------------------->
         <div id="blogPosts">
             <h1>Journal</h1>
-            <div id="retainable-rss-embed" 
-data-rss="https://medium.com/feed/@duongsters"
-data-maxcols="3" 
-data-layout="grid" 
-data-poststyle="inline" 
-data-readmore="Read the rest" 
-data-buttonclass="btn btn-primary" 
-data-offset="-100"></div>
+            <div id="retainable-rss-embed" data-rss="https://medium.com/feed/@duongsters" data-maxcols="3"
+                data-layout="grid" data-poststyle="inline" data-readmore="Read the rest"
+                data-buttonclass="btn btn-primary" data-offset="-100"></div>
         </div>
 
-<!-------------------- my contact location within the webpage ----------------------------------------------------------------------------------------------------------------------------------------->
+        <!-------------------- my contact location within the webpage ----------------------------------------------------------------------------------------------------------------------------------------->
         <div id="contactMe">
             <h1>Contact</h1>
             <table>
@@ -137,10 +142,14 @@ data-offset="-100"></div>
                                 <!-- my social medias row -->
                                 <tr>
                                     <td>
-                                        <a class="socialMedias" href="https://www.twitter.com/TheAndrewDuong"><i class="fab fa-twitter"></i></a>
-                                        <a class="socialMedias" href="https://www.instagram.com/theandrewduong"><i class="fab fa-instagram"></i></a>
-                                        <a class="socialMedias" href="https://www.facebook.com/andrew.duong1989"><i class="fab fa-facebook"></i></a>
-                                        <a class="socialMedias" href="https://dribbble.com/Duongsters"><i class="fab fa-dribbble"></i></a>
+                                        <a class="socialMedias" href="https://www.twitter.com/TheAndrewDuong"><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a class="socialMedias" href="https://www.instagram.com/theandrewduong"><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a class="socialMedias" href="https://www.facebook.com/andrew.duong1989"><i
+                                                class="fab fa-facebook"></i></a>
+                                        <a class="socialMedias" href="https://dribbble.com/Duongsters"><i
+                                                class="fab fa-dribbble"></i></a>
                                     </td>
                                 </tr>
 
@@ -169,13 +178,13 @@ data-offset="-100"></div>
             </table>
         </div>
 
-<!----------------------- my footer section at the end of the webpage -------------------------------------------------------------------------------------------------->
+        <!----------------------- my footer section at the end of the webpage -------------------------------------------------------------------------------------------------->
         <div id="footer">
             Andrew Duong &#169 2019.
             <!-- my privacy policy -->
             <a href="https://www.termsfeed.com/privacy-policy/dea6d12a2dd09ca19faebf9b85139e89/"
                 style="float: right;">Privacy Policy</a>
-                <br>
+            <br>
             <!-- my user terms and conditions -->
             <a href="https://www.termsfeed.com/terms-conditions/41b0874cb2d4faccf4bec37c306183d5/"
                 style="float: right;">Terms and Conditions</a>
