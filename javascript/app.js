@@ -1,8 +1,8 @@
-// event handler captures the window width of browser as you use the scrollbar to go up/down page
+// event handler captures the entire window width of browser 
 var width = $(window).width();
 //as you use the scrollbar element to scroll through the webpage...the .onscroll event handle will then then run this function below that will run this..
 window.onscroll = function () {
-    // if, else loop where it will check the element's width is greater than 1000px, it will then go and and see...
+    // if, else loop where it will check the element's width is greater than or equal to the max 1000px width, it will then go and and see...
     if ((width >= 1000)) {
         //if the body OR the element's content is vertically scroll upwards the page is greather than 80px, then...
         //source: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop
@@ -26,6 +26,7 @@ window.onscroll = function () {
                 $(this).css("border-bottom", "2px solid transparent")
             });
         }
+        //make all elements in header and navbar transparent
         else {
             $("#animateHeader").css("background", "transparent");
             $("#animateHeader").css("color", "#fff");
@@ -38,16 +39,18 @@ window.onscroll = function () {
     }
 }
 
-
+//this function will run after 800 milliseconds
 setTimeout(function () {
     //dynamically created class ID 'renderBrowser' that will store the callout
     $("#renderBrowser").addClass("animated zoomOut");
+    //this function will run after 1645 milliseconds
     setTimeout(function () {
+        //this function will basically stop all animations of the animated and display elements
         $("#renderBrowser").removeClass("animated zoomOut");
         $("#renderBrowser").css("display", "none");
-        //the 2nd function on line 63 will run and will remove the animations once it hits 800px
+        //the 2nd function on line 46 will run and will remove the animations
     }, 800);
-    //the first function on line 61 will be executed once it hits the 1650px barrier as they scroll down
+
 }, 1645);
 
 
