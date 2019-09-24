@@ -1,5 +1,5 @@
 // event handler captures the window width of browser as you use the scrollbar to go up/down page
-var scrolling = $(window).width();
+var width = $(window).width();
 //as you use the scrollbar element to scroll through the webpage, the .onscroll event handle will then then run this function below that will run this..
 //source: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop
 window.onscroll = function() {
@@ -41,16 +41,16 @@ window.onscroll = function() {
 
 //function that will animate zooming in the profile picture of mine as the user scrolls down the webpage
         function ZoomImg(imgUrl) {
-        $("#imgPlaced").css("background", `url('${imgUrl}') center center`);
+        $("#imgPlaced").css("background", `url('$https://pasteboard.co/IyNkTtb.jpg') center center`);
         $("#zoomImg").css("display", "flex");
-        $("#zoomImg").addclass("animed zoomIn");
+        $("#zoomImg").addClass("animed zoomIn");
         setTimeout(function(){
             $("#zoomImg").removeClass("animated zoomIn");
         }, 800);
     }
 
         function renderZoomImg(){
-            $("#zoomImg").addclass("animated zoomOut");
+            $("#zoomImg").addClass("animated zoomOut");
             setTimeout(function(){
                 $("#zoomImg").css("display", "none");
                 $("#zoomImg").removeClass("animated zoomOut");
@@ -59,7 +59,7 @@ window.onscroll = function() {
         }
         //
         setTimeout(function(){
-            $("#renderBrowser").addclass("animated zoomOut");
+            $("#renderBrowser").addClass("animated zoomOut");
             setTimeout(function(){
                 $("#renderBrowser").removeClass("animated zoomOut");
                 $("#renderBrowser").css("display", "none");
@@ -69,8 +69,20 @@ window.onscroll = function() {
         }, 1645);
 
 
-    
-
+        // calls this function to fun after webpage is loaded
+        $(document).ready(function(){
+            //uses the on click event handle that will check on the changes within the 'a' tag of my social media links
+            $("a").on("click", function(event){
+                if(this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $("body, html").animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1800, function(){
+                        hash = window.location.hash;
+                    });
+                }
+            });
         });
         
 
