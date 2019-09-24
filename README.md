@@ -14,7 +14,7 @@
 - GitHub: Used to create the repository for the html and css in which that can be pushed to GitHub domain
 
 ## Summary:
-    In my updated portfolio, I was able to manage in using Bootstrap, Media Queries, and jquery to create my portfolio webpage. Using the mainly the .on 'click' and .onscroll DOM event handle was a huge proponent in getting my portfolio page to me all within one webpage instead of creating separate pages for my about me, projects, blog/journal and contact pages. 
+    In my updated portfolio, I was able to manage in using Bootstrap, Media Queries, and jquery to create my portfolio webpage. Using the mainly the .on, .onscroll .scrollTop and .hash DOM event handle was a huge proponent in getting my portfolio page to me all within one webpage instead of creating separate pages for my about me, projects, blog/journal and contact pages. And for the vistors to scroll up and down the webpage smoothly using the .hash DOM 
 
 ## Code Snippet:
 ```html

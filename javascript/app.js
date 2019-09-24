@@ -26,7 +26,7 @@ window.onscroll = function () {
                 $(this).css("border-bottom", "2px solid transparent")
             });
         }
-        //make all elements in header and navbar transparent
+        //make all elements in header, navbar and underline effects have the dissaprear effect
         else {
             $("#animateHeader").css("background", "transparent");
             $("#animateHeader").css("color", "#fff");
@@ -45,7 +45,7 @@ setTimeout(function () {
     $("#renderBrowser").addClass("animated zoomOut");
     //this function will run after 1645 milliseconds
     setTimeout(function () {
-        //this function will basically stop all animations of the animated and display elements
+        //this function will basically stop all animations of the zoom animations and display elements cleared within the webpage
         $("#renderBrowser").removeClass("animated zoomOut");
         $("#renderBrowser").css("display", "none");
         //the 2nd function on line 46 will run and will remove the animations
@@ -58,9 +58,11 @@ setTimeout(function () {
 $(document).ready(function () {
     //uses the on click event handle that will check on the changes within the 'a' tag of my social media links
     $("a").on("click", function (event) {
+        //used .hash DOM method to change the 
         if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
+            //reads all animated hyperlink tags within the body & html elements
             $("body, html").animate({
                 scrollTop: $(hash).offset().top
             }, 1800, function () {
