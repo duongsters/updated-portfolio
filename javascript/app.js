@@ -54,18 +54,21 @@ setTimeout(function () {
 }, 1645);
 
 
-// calls this function to run after webpage is loaded
+// calls this function to run after webpage is loaded....this is made for smooth scrolling when the user 
 $(document).ready(function () {
     //uses the on click event handle that will check on the changes within the 'a' tag of my social media links
     $("a").on("click", function (event) {
-        //used .hash DOM method to change the 
+        //makes sure this.hash has a string value before ovveriding the behavior
         if (this.hash !== "") {
             event.preventDefault();
+            //inputs the this.hash value within variable 'hash'
             var hash = this.hash;
-            //reads all animated hyperlink tags within the body & html elements
+            // used jQuery's .animate DOM method to add smooth page scroll
             $("body, html").animate({
                 scrollTop: $(hash).offset().top
+                //specfically set 1800 milliseconds for it to scroll within the html and body elements
             }, 1800, function () {
+                //based on the default click behavior, add #/'hash' to url tags after user is done scrolling 
                 hash = window.location.hash;
             });
         }

@@ -14,7 +14,7 @@
 - GitHub: Used to create the repository for the html and css in which that can be pushed to GitHub domain
 
 ## Summary:
-    In my updated portfolio, I was able to manage in using Bootstrap, Media Queries, and jquery to create my portfolio webpage. Using the mainly the .on, .onscroll .scrollTop and .hash DOM event handle was a huge proponent in getting my portfolio page to me all within one webpage instead of creating separate pages for my about me, projects, blog/journal and contact pages. And for the vistors to scroll up and down the webpage smoothly using the .hash DOM 
+    In my updated portfolio, I was able to manage in using Bootstrap, Media Queries, and jquery to create my portfolio webpage. Using the mainly the .on, .onscroll .scrollTop, .animate and the .hash DOM event handles were a huge proponent in getting my portfolio page to me all within one webpage instead of creating separate pages for my about me, projects, blog/journal and contact pages. And for the vistors to scroll up and down the webpage smoothly using the .hash & .animate DOM methods specifically.
 
 ## Code Snippet:
 ```html
@@ -82,6 +82,8 @@
                 <a href="https://duongsters.github.io/TriviaGame/"><img onclick="zoomImg($(this).attr('src'))"
                         src="./images/p5.png"></a>
                 <a href="https://duongsters.github.io/GIFTastic/"><img onclick="zoomImg($(this).attr('src'))"
+                        src="./images/p6.png"></a>
+                                        <a href="https://duongsters.github.io/GIFTastic/"><img onclick="zoomImg($(this).attr('src'))"
                         src="./images/p6.png"></a>
             </div>
         </div>
